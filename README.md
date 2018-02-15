@@ -11,11 +11,11 @@ using sys.argv as parameters described bellow:
 
 ### Mandatory parameters:
 **--date** after this identifier enter date in format dd/mm/YYYY  
-**--from** - enter starting destination using airports[iata codes](https://en.wikipedia.org/wiki/IATA_airport_code)>  
+**--from** enter starting destination using airports[iata codes](https://en.wikipedia.org/wiki/IATA_airport_code)  
 **--to** final destination in iatacode  
 
 ### Optional parameters:
-**--return** number of nights you wish to spent in destination, if not speicified single-way itinerary will be returned  
+**--return** number of nights you wish to spend in destination, if not speicified single-way itinerary will be returned  
 **--bags** number of checked baggage you wish to purchase for your flight, if not specified default is 0, maximum 2  
 **--fastest** no values comes after this identifier, it will change search prefereces from default cheapest to fastest  
 
