@@ -11,7 +11,7 @@ using sys.argv as parameters described bellow:
 
 ### Mandatory parameters:
 **--date** after this identifier enter date in format dd/mm/YYYY  
-**--from** enter starting destination using airports[iata codes](https://en.wikipedia.org/wiki/IATA_airport_code)  
+**--from** enter starting destination using airport [iata code](https://en.wikipedia.org/wiki/IATA_airport_code)  
 **--to** final destination in iatacode  
 
 ### Optional parameters:
