@@ -84,7 +84,7 @@ def search_flight(flights):
     # we let kiwi api to sort results so we want to take first one
     if BAGS_COUNT == 0:
         try:
-            return request[0]
+            return flights[0]
         except KeyError:
             print('No flight found. Try different date/route option...')
             sys.exit()
@@ -150,7 +150,7 @@ def book_flight(booking_token, bags_number):
 
 if __name__ == "__main__":
 
-    PAYLOAD, BAGS_COUNT = (parse_commandline(VALID_IDENTIFIERS, MANDATORY))
+    PAYLOAD, BAGS_COUNT = parse_commandline(VALID_IDENTIFIERS, MANDATORY)
     r = requests.get(URL, params=parse_payload(PAYLOAD))
     print('\nRequest status:', r.status_code, '\n')
     request = json.loads(r.text)
